@@ -6,66 +6,36 @@
     <title>Content Edit - Design Monks</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: system-ui, -apple-system, sans-serif;
-            background: #0f172a;
-            color: #e2e8f0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 40px 20px;
-        }
-        .container { max-width: 700px; width: 100%; }
-        h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; color: #f1f5f9; }
-        .subtitle { color: #64748b; margin-bottom: 40px; font-size: 1rem; }
-        .card {
-            background: #1e293b;
-            border: 1px solid #334155;
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 16px;
-            transition: border-color 0.2s;
-        }
+        body { font-family: system-ui, -apple-system, sans-serif; background: #0f172a; color: #e2e8f0; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+        .container { max-width: 640px; padding: 48px 24px; text-align: center; }
+        h1 { font-size: 1.6rem; font-weight: 700; color: #f1f5f9; margin-bottom: 8px; }
+        p.subtitle { color: #64748b; margin-bottom: 40px; font-size: 0.95rem; }
+        .card { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 20px 24px; margin-bottom: 16px; text-align: left; transition: border-color .2s; }
         .card:hover { border-color: #0ea5e9; }
-        .card h2 { font-size: 1.1rem; font-weight: 600; color: #f1f5f9; margin-bottom: 6px; }
-        .card p { color: #94a3b8; font-size: 0.9rem; line-height: 1.5; }
-        .card a { color: #0ea5e9; text-decoration: none; display: block; }
-        .card a:hover { text-decoration: underline; }
-        .footer { margin-top: 40px; color: #475569; font-size: 0.8rem; text-align: center; }
+        .card a { text-decoration: none; color: inherit; display: block; }
+        .card h2 { font-size: 1.05rem; color: #f1f5f9; margin-bottom: 6px; }
+        .card p { font-size: 0.88rem; color: #94a3b8; line-height: 1.5; margin: 0; }
+        .footer { margin-top: 40px; font-size: 0.8rem; color: #475569; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Content Edit - Design Monks</h1>
-        <p class="subtitle">SEO content rewrites and optimizations for designmonks.co</p>
+        <p class="subtitle">SEO optimization pages for designmonks.co/blog/*</p>
 
         <div class="card">
-            <a href="ui-elements-optimization.html">
-                <h2>/blog/user-interface-elements</h2>
-                <p>Complete rewrite: title, H1, meta description, intro, H2 headings, body text, and image alt text for the UI elements guide.</p>
-                <p style="margin-top:8px;"><span style="display:inline-block;background:#0ea5e9;color:#0c1929;font-size:0.7rem;font-weight:600;padding:2px 8px;border-radius:4px;text-transform:uppercase;letter-spacing:0.5px;">Live</span></p>
+            <a href="plan-ui-elements.html">
+                <h2>Plan - /blog/user-interface-elements</h2>
+                <p>SEO optimization strategy: GSC analysis, keyword gaps, priority actions, and estimated impact for the UI elements guide.</p>
             </a>
         </div>
 
         <div class="card">
-            <a href="final-article-ui-elements.html">
-                <h2>Final Article - /blog/user-interface-elements</h2>
-                <p>Complete ready-to-publish article combining current content with all SEO optimizations: new title, H1, meta, intro, H2 headings, singular "UI element" mentions, FAQ answers, and image alt text.</p>
-                <p style="margin-top:8px;"><span style="display:inline-block;background:#16a34a;color:#fff;font-size:0.7rem;font-weight:600;padding:2px 8px;border-radius:4px;text-transform:uppercase;letter-spacing:0.5px;">Final</span></p>
+            <a href="changes-ui-elements.html">
+                <h2>Changes - /blog/user-interface-elements</h2>
+                <p>Old vs new comparison: what to add, what changed, before/after for title, H1, meta, H2s, body text, FAQs, and image alts.</p>
             </a>
         </div>
-
-        <div class="card">
-            <a href="optimization-plan-ui-elements.html">
-                <h2>Optimization Plan - /blog/user-interface-elements</h2>
-                <p>Full SEO strategy: GSC analysis, keyword gaps, content recommendations, section-level diagnosis, and priority action plan for the UI elements guide.</p>
-                <p style="margin-top:8px;"><span style="display:inline-block;background:#f59e0b;color:#0c1929;font-size:0.7rem;font-weight:600;padding:2px 8px;border-radius:4px;text-transform:uppercase;letter-spacing:0.5px;">Strategy</span></p>
-            </a>
-        </div>
-
-        <div style="text-align:center;margin-top:32px;color:#475569;">More pages coming soon...</div>
 
         <div class="footer">Content Edit - Design Monks &copy; 2026</div>
     </div>
