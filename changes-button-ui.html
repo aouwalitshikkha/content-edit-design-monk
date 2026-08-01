@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Button UI Design Guide — Changes & Improvements | Design Monks</title>
-    <meta name="description" content="Before and after comparison: title, meta, schema, alt text, and internal link improvements for the Button UI Design article.">
+    <meta name="description" content="Before and after comparison: title, meta, H1, and image alt text improvements for the Button UI Design article.">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f9fa; color: #1a1a2e; line-height: 1.6; padding: 2rem; }
@@ -47,9 +47,9 @@
                 <tr><td>Title tag</td><td>46 chars, missing "button design"</td><td>55 chars, targets both phrases</td></tr>
                 <tr><td>Meta description</td><td>127 chars</td><td>158 chars, adds "button design"</td></tr>
                 <tr><td>H1 tag</td><td>"Master Button UI Design: Explore 91 Unique Styles"</td><td>Aligned with title tag</td></tr>
-                <tr><td>Schema</td><td>0 blocks</td><td>BlogPosting + BreadcrumbList</td></tr>
+                <tr><td>Schema</td><td>0 blocks</td><td><span class="tag tag-critical">Skip — keep as is</span></td></tr>
                 <tr><td>Images alt text</td><td>65 missing alt text</td><td>All 127 images have alt text</td></tr>
-                <tr><td>Internal links</td><td>7 unique links</td><td>12-15 unique links</td></tr>
+                <tr><td>Internal links</td><td>7 unique links</td><td><span class="tag tag-critical">Skip — keep as is</span></td></tr>
             </table>
         </div>
 
@@ -104,53 +104,8 @@
             <p>Aligned H1 with the title tag so both reinforce the same keyword phrases. "Master" and "Explore Unique" were generic. The new H1 matches the title exactly, giving Google a stronger signal that "button ui design" and "button design" are the primary topic phrases.</p>
         </div>
 
-        <!-- 4. Schema -->
-        <h2 class="section-title">4. Schema Markup (BlogPosting + BreadcrumbList)</h2>
-        <div class="comparison">
-            <div class="old-box">
-                <div class="label">Old — Missing</div>
-                <div class="content">No JSON-LD schema blocks on the page. Zero structured data.</div>
-            </div>
-            <div class="new-box">
-                <div class="label">New — Add in &lt;head&gt;</div>
-                <div class="content">
-<pre style="font-size:0.8rem; line-height:1.4; overflow-x:auto;">
-&lt;script type="application/ld+json"&gt;
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Button UI Design Guide: 91 Types, Patterns &amp; Best Practices",
-  "description": "Discover 91 button design and UI styles including ghost, toggle, radio, and more. Master button UI design patterns, styles, and best practices for modern interfaces.",
-  "datePublished": "2024-01-01",
-  "author": {
-    "@type": "Organization",
-    "name": "Design Monks"
-  }
-}
-&lt;/script&gt;
-
-&lt;script type="application/ld+json"&gt;
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.designmonks.co/"},
-    {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.designmonks.co/blog"},
-    {"@type": "ListItem", "position": 3, "name": "Button UI Design Guide"}
-  ]
-}
-&lt;/script&gt;
-</pre>
-                </div>
-            </div>
-        </div>
-        <div class="why-box">
-            <div class="label">Why</div>
-            <p>Zero schema means zero rich results. BlogPosting enables Google to show the article in news/blogs carousels and rich snippets with author and date. BreadcrumbList enables breadcrumb trails in SERP, which improves CTR by making the result look established and navigable.</p>
-        </div>
-
-        <!-- 5. Images Alt Text -->
-        <h2 class="section-title">5. Images Alt Text (65 images to fix)</h2>
+        <!-- 4. Images Alt Text (65 images to fix) -->
+        <h2 class="section-title">4. Images Alt Text (65 images to fix)</h2>
         <div class="comparison">
             <div class="old-box">
                 <div class="label">Old — 65 missing</div>
@@ -171,38 +126,13 @@
             <p>Alt text serves two SEO functions: (1) enables images to rank in Google Image Search, which drives additional traffic, and (2) provides accessibility context for screen readers. With 127 images showing 91 button types, this is a significant untapped traffic source. Each alt tag describes the button style shown concisely.</p>
         </div>
 
-        <!-- 6. Internal Links -->
-        <h2 class="section-title">6. Internal Links (add 5-8 more)</h2>
-        <div class="comparison">
-            <div class="old-box">
-                <div class="label">Old — 7 unique links</div>
-                <div class="content">Links to: show-two-primary-buttons-ui, perfect-mobile-button-size, ways-of-designing-your-cta-buttons, reset-button-ui, delete-button-ui</div>
-            </div>
-            <div class="new-box">
-                <div class="label">New — 12-15 unique links</div>
-                <div class="content">Add links to additional relevant blog posts:<br>
-                — "What Is the Best Color for CTA Buttons?"<br>
-                — "Button Accessibility: Size, Color & Contrast Guide"<br>
-                — "Secondary vs Tertiary Button Design"<br>
-                — "Mobile Button Design Best Practices"<br>
-                — "UI Button Animation Guide"<br>
-                — "Form Button Design: Submit, Reset & Cancel"</div>
-            </div>
-        </div>
-        <div class="why-box">
-            <div class="label">Why</div>
-            <p>For a 10,700-word article covering 91 button types, 7 internal links is very low density (~1 link per 1,500 words). A healthy ratio is 1 link per 300-500 words. Adding 5-8 more relevant links distributes authority across the site and gives users natural paths to related content. Link text should use descriptive anchor phrases, not generic "click here" text.</p>
-        </div>
-
         <div class="summary-table">
             <h2 style="margin: 0 0 1rem 0;">Estimated Impact</h2>
             <table>
                 <tr><th>Change</th><th>Expected Impact</th><th>Est. Effort</th></tr>
                 <tr><td>Title + meta rewrite</td><td>Improve "button design" from pos 9.4 to top 5-7</td><td>10 min</td></tr>
-                <tr><td>Schema (BlogPosting + BreadcrumbList)</td><td>Enable rich results in SERP</td><td>15 min</td></tr>
                 <tr><td>65 image alt tags</td><td>Open image search traffic on all 91 button types</td><td>30 min</td></tr>
-                <tr><td>5-8 more internal links</td><td>Better authority flow, lower bounce rate</td><td>15 min</td></tr>
-                <tr><th></th><th><strong>Total</strong></th><th><strong>~70 min</strong></th></tr>
+                <tr><th></th><th><strong>Total</strong></th><th><strong>~40 min</strong></th></tr>
             </table>
         </div>
     </div>
